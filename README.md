@@ -177,6 +177,23 @@ Finally, generate a GFF file of all modifications that are part of motifs.
 
 ### MotifMaker Options
 
+MotifMaker options, except for `--help`, require the specification of a command first- either `find` or `reprocess`. 
+
+| Command  |  Parameter          |     Example      |  Explanation      |
+| ----- | ------------------ | ---------------- | ----------------- |
+| find | Reference FASTA |  -f, --fasta | Reference fasta file |
+| find | Modifications GFF | -g, --gff | modifications.gff or .gff.gz file |
+| find | Minimum Qmod Score |  -m, --minScore | Minimum Qmod score to use in motif finding (default: 30.0) |
+| find | Motif CSV | -o, --output | Output motifs csv file |
+| find | Parallelize | -p, --parallelize | Parallelize motif finder (default: true) |
+| find | Motif XML | -x, --xml | Output motifs xml file |
+| reprocess | Modifications CSV | -c, --csv |  Raw modifications.csv file |
+| reprocess | Reference FASTA | -f, --fasta |  Reference fasta file |
+| reprocess | Modifications GFF | -g, --gff |  original modifications.gff or .gff.gz file |
+| reprocess | Minimum MethylFraction | --minFraction |  Only use motifs above this methylated fraction (default: 0.0) |
+| reprocess | Motifs CSV | -m, --motifs |  motifs csv |
+| reprocess | Reprocessed Modifications GFF | -o, --output |  Reprocessed modifications.gff file |
+
 ## Files
 
 ### PBAlign Files
