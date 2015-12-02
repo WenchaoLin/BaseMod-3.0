@@ -181,7 +181,7 @@ This file summarizes the modified motifs discovered by the tool. The CSV contain
 |fraction	| Fraction of instances of this motif with modification QV above the QV threshold| 
 |nDetected	| Number of instances of this motif with above threshold| 
 |nGenome	| Number of instances of this motif in reference sequence| 
-|groupTag	| A string idetifying the motif grouping. For paired motifs this is “<motifString1>/<motifString2>”, For unpaired motifs|  this equals motifString| 
+|groupTag	| A string idetifying the motif grouping. For paired motifs this is “<motifString1>/<motifString2>”, For unpaired motifs  this equals motifString| 
 |partnerMotifString	| motifString of paired motif (motif with reverse-complementary motifString)| 
 |meanScore	| Mean Modification Qv of detected instances| 
 |meanIpdRatio	| Mean IPD ratio of detected instances| 
