@@ -181,6 +181,7 @@ MotifMaker options, except for `--help`, require the specification of a command 
 
 | Command  |  Parameter          |     Example      |  Explanation      |
 | ----- | ------------------ | ---------------- | ----------------- |
+| | Help | -h, --help | show this help message and exit |
 | find | Reference FASTA |  -f, --fasta | Reference fasta file |
 | find | Modifications GFF | -g, --gff | modifications.gff or .gff.gz file |
 | find | Minimum Qmod Score |  -m, --minScore | Minimum Qmod score to use in motif finding (default: 30.0) |
