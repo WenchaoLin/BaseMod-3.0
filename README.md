@@ -70,6 +70,19 @@ To index your `reference.fasta`, use `samtools faidx reference.fasta`.
 
 To index your `aligned_subreads.bam`, use `pbindex aligned_subreads.bam`. 
 
+__Step 3. MotifMaker Find__
+
+Next, identify consensus motifs.
+
+     motifMaker find -f reference.fasta -g basemods.gff -o motifs.csv
+
+__Step 4. MotifMaker Reprocess__
+
+Finally, generate a GFF file of all modifications that are part of motifs. 
+
+     motifMaker reprocess -f reference.fasta -g basemods.gff -m motifs.csv -o motifs.gff
+
+
 ### Running on the Command Line with pbsmrtpipe
 
 ## Advanced Analysis Options
