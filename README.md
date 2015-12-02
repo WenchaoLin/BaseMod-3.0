@@ -91,6 +91,40 @@ Finally, generate a GFF file of all modifications that are part of motifs.
 
 ### PBAlign Options
 
+| Type  |  Parameter          |     Example      |  Explanation      |
+| ----- | ------------------ | ---------------- | ----------------- |
+| positional | Input File |  unaligned.bam | SubreadSet or unaligned .bam |
+| positional | Reference File |  reference.fasta | Reference DataSet or FASTA file |
+| positional | Output File |  aligned.bam | Output AlignmentSet file |
+| optional | Help | -h, --help | show this help message and exit |
+| optional | Version | -v, --version | show program's version number and exit |
+| optional | Verbose | --verbose | No Description (greg) |
+| optional | Debug | --debug | Writes the debug reporting to stdout |
+| optional | Profile | --profile | Print runtime profile at exit |
+| optional input | Region Table | --regionTable REGIONTABLE | Specify a region table for filtering reads. |
+| optional input | Configuration File | --configFile CONFIGFILE | Specify a set of user-defined argument values. |
+| optional input | Pulse File | --pulseFile PULSEFILE | When input reads are in fasta format and output is a cmp.h5 this option can specify pls.h5 or bas.h5 or FOFN files from which pulse metrics can be loaded for Quiver. |
+| alignment | Algorithm | --algorithm {blasr, bowtie, gmap} | Select an aligorithm from ('blasr', 'bowtie', 'gmap'). Default algorithm is blasr. |
+| alignment | Maximum Hits | --maxHits MAXHITS | The maximum number of matches of each read to the reference sequence that will be evaluated. Default value is 10. |
+| alignment | Minimum Anchor Size | --minAnchorSize MINANCHORSIZE | The minimum anchor size defines the length of the read that must match against the reference sequence. Default value is 12. |
+| alignment | Use CCS | --useccs {useccs, useccsall, useccsdenovo} | Map the ccsSequence to the genome first, then align subreads to the interval that the CCS reads mapped to. useccs: only maps subreads that span the length of the template. useccsall: maps all subreads. useccsdenovo: maps ccs only. |
+| alignment | No Split Subreads | --noSplitSubreads | Do not split reads into subreads even if subread regions are available. Default value is False. |
+| alignment | Concordant | --concordant | Map subreads of a ZMW to the same genomic location. |
+| alignment | Number of Threads | --nproc NPROC | Number of threads. Default value is 8. |
+| alignment | Algorithm Options | --algorithmOptions ALGORITHMOPTIONS | Pass alignment options through. |
+| filter criteria | Maximum Divergence | --maxDivergence MAXDIVERGENCE | The maximum allowed percentage divergence of a read from the reference sequence. Default value is 30.0. |
+| filter criteria | Minimum Accuracy | --minAccuracy MINACCURACY | The minimum percentage accuracy of alignments that will be evaluated. Default value is 70.0. |
+| filter criteria | Minimum Length | --minLength MINLENGTH | The minimum aligned read length of alignments that will be evaluated. Default value is 50. |
+| filter criteria | Score Cutoff | --scoreCutoff SCORECUTOFF | The worst score to output an alignment. |
+| filter criteria | Hit Policy | --hitPolicy {randombest, allbest, random, all, leftmost} | Specify a policy for how to treat multiple hit random: selects a random hit. all: selects all hits. allbest: selects all the best score hits. randombest: selects a random hit from all best score hits. leftmost: selects a hit which has the best score and the smallest mapping coordinate in any reference. Default value is randombest. |
+| filter criteria | Filter Adapter-Only | --filterAdapterOnly |  If specified, do not report adapter-only hits using annotations with the reference entry. |
+| for cmp.h5 | For Quiver | --forQuiver | The output cmp.h5 file which will be sorted, loaded with pulse QV information, and repacked, so that it can be consumed by quiver directly. This requires the input file to be in PacBio bas/pls.h5 format, and --useccs must be None. Default value is False. |
+| for cmp.h5 | Load QVs | --loadQVs | Similar to --forQuiver, the only difference is that --useccs can be specified. Default value is False. |
+| for cmp.h5 | By Read | --byread | Load pulse information using -byread option instead of -bymetric. Only works when --forQuiver or --loadQVs are set. Default value is False. |
+| for cmp.h5 | Metrics | --metrics METRICS | Load the specified (comma-delimited list of) metrics instead of the default metrics required by quiver. This option only works when --forQuiver  or --loadQVs are set. Default: DeletionQV, DeletionTag, InsertionQV, MergeQV, SubstitutionQV |
+| miscellaneous | Seed | --seed SEED | Initialize the random number generator with a none-zero integer. Zero means that current system time is used. Default value is 1. |
+| miscellaneous | Temporary Directory | --tmpDir TMPDIR | Specify a directory for saving temporary files. Default is /scratch. |
+
 ### kineticsTools Options
 
 |  Parameter          |     Example      |  Explanation      |
