@@ -93,6 +93,29 @@ Finally, generate a GFF file of all modifications that are part of motifs.
 
 ### kineticsTools Options
 
+|  Parameter          |     Example      |  Explanation      |
+| ------------------ | ---------------- | ----------------- |
+| Input Reads | aligned_subreads.bam | This is a positional argument and the first argument to be specified. Can be a BAM or Alignment DataSet. |
+| Help |  -h, --help | show this help message and exit |
+| Version | -v, --version | show program's version number and exit |
+| Emit Tool Contract | --emit-tool-contract | Emit Tool Contract to stdout (default: False) |
+| Resolved Tool Contract | --resolved-tool-contract RESOLVED_TOOL_CONTRACT | Run Tool directly from a PacBio Resolved tool contract (default: None) |
+| Log Level | --log-level {DEBUG, INFO, WARNING, ERROR, CRITICAL} | Set log level (default: INFO) |
+| Debug Mode | --debug | Debug to stdout (default: False) |
+| Reference File | --reference REFERENCE | Fasta or Reference DataSet (default: None) |
+| Modifications GFF | --gff GFF | Output GFF file of modified bases (default: None) |
+| Modifications CSV | --csv CSV | Output CSV file out per-nucleotide information (default: None) |
+| Help |  -h, --help | show this help message and exit |
+| Help |  -h, --help | show this help message and exit |
+| Help |  -h, --help | show this help message and exit |
+| Help |  -h, --help | show this help message and exit |
+| Help |  -h, --help | show this help message and exit |
+| Help |  -h, --help | show this help message and exit |
+| Help |  -h, --help | show this help message and exit |
+
+
+
+
 ### MotifMaker Options
 
 ## Files
