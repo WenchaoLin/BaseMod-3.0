@@ -125,6 +125,24 @@ frac		| estimate of the fraction of molecules that carry the modification	|
 fracLow		| 2.5% confidence bound of frac estimate	| 
 fracUpp		| 97.5% confidence bound of frac estimate	| 
 
+**case-control mode output columns**
+
+|Column	| Description |
+| ----- | ----------- |
+|refId		| reference sequence ID of this observation|
+|tpl		| 1-based template position|
+|strand		| native sample strand where kinetics were generated. ‘0’ is the strand of the original FASTA, ‘1’ is opposite strand from FASTA|
+|base		| the cognate base at this position in the reference|
+|score		| Phred-transformed pvalue that a kinetic deviation exists at this position|
+|caseMean		| mean of normalized case IPDs observed at this position|
+|controlMean		| mean of normalized control IPDs observed at this position|
+|caseStd		| standard deviation of case IPDs observed at this position|
+|controlStd		| standard deviation of control IPDs observed at this position|
+|ipdRatio		| tMean / modelPrediction|
+|testStatistic		| t-test statistic|
+|coverage		| mean of case and control coverage|
+|controlCoverage		| count of valid control IPDs at this position (see Filtering section for details)|
+|caseCoverage		| count of valid case IPDs at this position (see Filtering section for details)|
 
 ### MotifMaker Files
 
