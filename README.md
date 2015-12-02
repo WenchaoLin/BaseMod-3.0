@@ -101,7 +101,7 @@ Finally, generate a GFF file of all modifications that are part of motifs.
 
 ### kineticsTools Files
 
-__Modifications CSV File (modifications.csv)__
+__Modifications CSV File (basemods.csv)__
 
 The modifications.csv file contains one row for each (reference position, strand) pair that appeared in the dataset with coverage at least x. x defaults to 3, but is configurable with ‘–minCoverage’ flag to ipdSummary.py. The reference position index is 1-based for compatibility with the gff file the R environment.
 
@@ -144,7 +144,7 @@ fracUpp		| 97.5% confidence bound of frac estimate	|
 |controlCoverage		| count of valid control IPDs at this position (see Filtering section for details)|
 |caseCoverage		| count of valid case IPDs at this position (see Filtering section for details)|
 
-__Modifications GFF File (modifications.gff)__
+__Modifications GFF File (basemods.gff)__
 
 The modifications.gff is compliant with the GFF Version 3 [specification](http://www.sequenceontology.org/gff3.shtml). Each template position / strand pair whose p-value exceeds the pvalue threshold appears as a row. The template position is 1-based, per the GFF spec. The strand column refers to the strand carrying the detected modification, which is the opposite strand from those used to detect the modification. The GFF confidence column is a Phred-transformed pvalue of detection.
 
