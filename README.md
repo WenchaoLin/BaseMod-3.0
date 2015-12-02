@@ -105,6 +105,12 @@ Finally, generate a GFF file of all modifications that are part of motifs.
 | Reference File | --reference REFERENCE | Fasta or Reference DataSet (default: None) |
 | Modifications GFF | --gff GFF | Output GFF file of modified bases (default: None) |
 | Modifications CSV | --csv CSV | Output CSV file out per-nucleotide information (default: None) |
+| Number of Jobs | --numWorkers NUMWORKERS, -j NUMWORKERS | Number of thread to use (-1 uses all logical cpus) (default: 1) |
+| P-Value | --pvalue PVALUE | P-value cutoff (default: 0.01) |
+| Maximum Length | --maxLength MAXLENGTH | Maximum number of bases to process per contig (default: 3000000000000) |
+| Indentify |  --identify IDENTIFY | Specific modifications to identify (comma-separated list). Currrent options are m6A, m4C, m5C_TET. Cannot be used with --control. (default: ) |
+| Methyl Fraction | --methylFraction | In the --identify mode, add --methylFraction to command line to estimate the methylated fraction, along with 95% confidence interval bounds. (default: False) |
+| Output Files | --outfile OUTFILE | Use this option to generate all possible output files. Argument here is the root filename of the output files. (default: None) |
 | Help |  -h, --help | show this help message and exit |
 | Help |  -h, --help | show this help message and exit |
 | Help |  -h, --help | show this help message and exit |
@@ -112,7 +118,9 @@ Finally, generate a GFF file of all modifications that are part of motifs.
 | Help |  -h, --help | show this help message and exit |
 | Help |  -h, --help | show this help message and exit |
 | Help |  -h, --help | show this help message and exit |
-
+| Help |  -h, --help | show this help message and exit |
+| Help |  -h, --help | show this help message and exit |
+| Help |  -h, --help | show this help message and exit |
 
 
 
