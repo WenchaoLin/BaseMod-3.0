@@ -95,6 +95,17 @@ Finally, generate a GFF file of all modifications that are part of motifs.
 
 ### MotifMaker Options
 
+## Files
+
+### PBAlign Files
+
+### kineticsTools Files
+
+
+
+### MotifMaker Files
+
+
 ## Algorithm Modules
 
 ## Glossary
