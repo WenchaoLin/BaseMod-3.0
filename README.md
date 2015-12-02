@@ -24,7 +24,7 @@ Table of contents
 
 ## Overview
 
-![base modification and motif analysis](https://cloud.githubusercontent.com/assets/12494820/11547830/d8a1a4aa-990b-11e5-885b-4a5d5db276e8.png)
+![base modification and motif analysis](https://cloud.githubusercontent.com/assets/12494820/11547976/fae1afa0-990c-11e5-9e74-61ab466e9db2.png)
 
 Analyses are performed in four stages, PBAlign, kineticsTools, MotifMaker Find, and MotifMaker Reprocess. 
 * __PBAlign__
