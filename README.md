@@ -11,7 +11,7 @@ Table of contents
     * [Running on the Command Line](#running-on-the-command-line)
     * [Running on the Command Line with pbsmrtpipe](#running-on-the-command-line-with-pbsmrtpipe)
   * [Advanced Analysis Options](#advanced-analysis-options)
-    * [SMRTLink/pbsmrtpipe Resequencing Options](#smrtlinkpbsmrtpipe-basemod-options)
+    * [SMRTLink/pbsmrtpipe BaseMod Options](#smrtlinkpbsmrtpipe-basemod-options)
     * [PBAlign Options](#pbalign-options)
     * [kineticsTools Options](#kineticstools-options)
     * [MotifMaker Options](#motifmaker-options)
@@ -34,7 +34,7 @@ Table of contents
 
 ## Advanced Analysis Options
 
-### SMRTLink/pbsmrtpipe Resequencing Options
+### SMRTLink/pbsmrtpipe Basemod Options
 
 ### PBAlign Options
 
