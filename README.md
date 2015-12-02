@@ -8,8 +8,8 @@ Table of contents
   * [Overview](#overview)
   * [Manual](#manual)
     * [Running with SMRTLink](#running-with-smrtanalysis)
-    * [Running on the Command-Line](#running-on-the-command-line)
-    * [Running on the Command-Line with pbsmrtpipe](#running-on-the-command-line-with-pbsmrtpipe)
+    * [Running on the Command Line](#running-on-the-command-line)
+    * [Running on the Command Line with pbsmrtpipe](#running-on-the-command-line-with-pbsmrtpipe)
   * [Advanced Analysis Options](#advanced-analysis-options)
     * [SMRTLink/pbsmrtpipe Resequencing Options](#smrtlinkpbsmrtpipe-basemod-options)
     * [PBAlign Options](#pbalign-options)
@@ -23,3 +23,25 @@ Table of contents
   * [Glossary](#glossary)
 
 ## Overview
+
+## Manual
+
+### Running with SMRTLink
+
+### Running on the Command Line
+
+### Running on the Command Line with pbsmrtpipe
+
+## Advanced Analysis Options
+
+### SMRTLink/pbsmrtpipe Resequencing Options
+
+### PBAlign Options
+
+### kineticsTools Options
+
+### MotifMaker Options
+
+## Algorithm Modules
+
+## Glossary
