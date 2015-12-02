@@ -48,7 +48,7 @@ On the command line, the analysis is performed in 4 steps:
 1. Run PBAlign on your unaligned subreads, generating an aligned BAM.
 2. Run kineticsTools on your aligned BAM, generating a GFF and CSV containing base modification information.
 3. Run MotifMaker on your GFF generated from kineticsTools, generating a CSV containing motif information.
-4. Run MotifMaker on your base modification GFF and motif CSV, generating a (todo)
+4. Run MotifMaker on your base modification GFF and motif CSV, generating a motif GFF.
 
 __Step 1. PBAlign__
 
