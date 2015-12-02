@@ -1,5 +1,3 @@
-# BaseMod-3.0
-
 # BaseMod: PacBio DNA Modification Sequence Analysis
 
 TODO
