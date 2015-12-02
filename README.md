@@ -64,7 +64,7 @@ Next, analyze your aligned sequences for base modifications.
 
      ipdSummary aligned.subreads.bam --reference /path/to/reference.fasta --gff basemods.gff --csv basemods.csv --pvalue 0.001 --numWorkers 16 --identify m4C,m6A
  
-
+Note that you will need to have an index file for your reference.fasta and for your aligned.subreads.bam. To index your reference.fasta, use `samtools faidx reference.fasta`. To index your aligned.subreads.bam, use `pbindex aligned.subreads.bam`. 
 
 ### Running on the Command Line with pbsmrtpipe
 
