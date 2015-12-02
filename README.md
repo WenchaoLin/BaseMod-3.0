@@ -98,8 +98,8 @@ Finally, generate a GFF file of all modifications that are part of motifs.
 | Input Reads | aligned_subreads.bam | This is a positional argument and the first argument to be specified. Can be a BAM or Alignment DataSet. |
 | Help |  -h, --help | show this help message and exit |
 | Version | -v, --version | show program's version number and exit |
-| Emit Tool Contract | --emit-tool-contract | Emit Tool Contract to stdout (default: False) |
-| Resolved Tool Contract | --resolved-tool-contract RESOLVED_TOOL_CONTRACT | Run Tool directly from a PacBio Resolved tool contract (default: None) |
+| Emit Tool Contract | --emit-tool-contract | Emit Tool Contract to stdout (default: False) (nat) |
+| Resolved Tool Contract | --resolved-tool-contract RESOLVED_TOOL_CONTRACT | Run Tool directly from a PacBio Resolved tool contract (default: None) (nat) |
 | Log Level | --log-level {DEBUG, INFO, WARNING, ERROR, CRITICAL} | Set log level (default: INFO) |
 | Debug Mode | --debug | Debug to stdout (default: False) |
 | Reference File | --reference REFERENCE | Fasta or Reference DataSet (default: None) |
@@ -111,18 +111,35 @@ Finally, generate a GFF file of all modifications that are part of motifs.
 | Indentify |  --identify IDENTIFY | Specific modifications to identify (comma-separated list). Currrent options are m6A, m4C, m5C_TET. Cannot be used with --control. (default: ) |
 | Methyl Fraction | --methylFraction | In the --identify mode, add --methylFraction to command line to estimate the methylated fraction, along with 95% confidence interval bounds. (default: False) |
 | Output Files | --outfile OUTFILE | Use this option to generate all possible output files. Argument here is the root filename of the output files. (default: None) |
-| Help |  -h, --help | show this help message and exit |
-| Help |  -h, --help | show this help message and exit |
-| Help |  -h, --help | show this help message and exit |
-| Help |  -h, --help | show this help message and exit |
-| Help |  -h, --help | show this help message and exit |
-| Help |  -h, --help | show this help message and exit |
-| Help |  -h, --help | show this help message and exit |
-| Help |  -h, --help | show this help message and exit |
-| Help |  -h, --help | show this help message and exit |
-| Help |  -h, --help | show this help message and exit |
-
-
+| m5C Scores | --m5Cgff M5CGFF | Name of output GFF file containing m5C scores (default: None) |
+| m5C Classifier | --m5Cclassifer M5CCLASSIFIER | Specify csv file containing a 127 x 2 matrix (default: None) |
+| CSV H5 Format | -csv_h5 CSV_H5 | Name of csv output to be written in hdf5 format. (default: None) |
+| Pickle | --pickle PICKLE | Name of output pickle file. (default: None) (nat) |
+| Summary H5 | --summary_h5 SUMMARY_H5 | Name of output summary h5 file. (default: None) |
+| Multisite Detection | --ms_csv MS_CSV | Multisite detection CSV file. (default: None) |
+| Case-Control Mode | --control CONTROL  | cmph.h5 file containing a control sample. Tool will perform a case-control analysis (default: None) |
+| LDA | --useLDA | Set this flag to debug LDA for m5C/Ca5C detection (default: False) |
+| Help | --paramsPath PARAMSPATH | Directory containing in-silico trained model for each chemistry (default: /mnt/secondary/builds/full/3.0.0/prod/smrtanalysis_3.0.0.167527/private/pacbio/pythonpkgs/kineticsTools/lib/python2.7/site-packages/kineticsTools/resources) (nat) |
+| Minimum Call Coverage | --minCoverage MINCOVERAGE | Minimum coverage required to call a modified base (default: 3) |
+| Maxmimum Queue Size | --maxQueueSize MAXQUEUESIZE | Max Queue Size (default: 20) |
+| Maximum Coverage | --maxCoverage MAXCOVERAGE | Maximum coverage to use at each site (default: -1) |
+| MapQV Threshold | --mapQvThreshold MAPQVTHRESHOLD | No Description (nat) |
+| IPD Model | --ipdModel IPDMODEL | Alternate synthetic IPD model HDF5 file (default: None) |
+| Model Iterations | --modelIters MODELITERS | [Internal] Number of GBM model iteration to use (default: -1) (nat) |
+| IPD Percentile Cap | --cap_percentile CAP_PERCENTILE | Global IPD percentile to cap IPDs at (default: 99.0) |
+| Minimum MethylFraction Coverage | --methylMinCov METHYLMINCOV | Do not try to estimate methylFraction unless coverage is at least this. (default: 10) |
+| Minimum Modification Coverage | --identifyMinCov IDENTIFYMINCOV | Do not try to identify the modification type unless coverage is at least this. (default: 5) |
+| Maximum Alignments |  --maxAlignments MAXALIGNMENTS | Maximum number of alignments to use for a given window (default: 1500) |
+| Reference Window |  -w REFERENCEWINDOWSASSTRING, --referenceWindow REFERENCEWINDOWSASSTRING, --referenceWindows REFERENCEWINDOWSASSTRING, --refContigs REFERENCEWINDOWSASSTRING | The window (or multiple comma-delimited windows) of the reference to be processed, in the format refGroup [:refStart-refEnd] (default: entire reference). (default: None) |
+| Reference Contig Index | --refContigIndex REFCONTIGINDEX | For debugging purposes only - rather than enter a reference contig name, simply enter an index (default: -1) (nat) |
+| Reference Window File | -W REFERENCEWINDOWSASSTRING, --referenceWindowsFile REFERENCEWINDOWSASSTRING, --refContigsFile REFERENCEWINDOWSASSTRING | A file containing reference window designations, one per line (default: None) |
+| Skip Unregognized Contigs | --skipUnrecognizedContigs SKIPUNRECOGNIZEDCONTIGS | Whether to skip, or abort, unrecognized contigs in the -w/-W flags (default: False) |
+| Alignment Window | --alignmentSetRefWindows | Use refWindows in dataset (default: False) |
+| Thread | --threaded, -T | Run threads instead of processes (for debugging purposes only) (default: False) (nat) |
+| Profile | --profile  | Enable Python-level profiling (using cProfile). (default: False) |
+| PBD Debugger | --usePdb | Enable dropping down into pdb debugger if an Exception is raised. (default: False) (nat) |
+| Seed | --seed RANDOMSEED | Random seed (for development and debugging purposes only) (default: None) |
+| Verbose | --verbose | Print verbose job information to stdout | 
 
 ### MotifMaker Options
 
