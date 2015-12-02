@@ -62,7 +62,7 @@ __Step 2. kineticsTools__
 
 Next, analyze your aligned sequences for base modifications.
 
-     ipdSummary aligned.subreads.bam --reference /path/to/reference.fasta --gff basemods.gff --csv basemods.csv --pvalue 0.001 --numWorkers 16 --identify m4C,m6A
+     ipdSummary aligned.subreads.bam --reference reference.fasta --gff basemods.gff --csv basemods.csv --pvalue 0.001 --numWorkers 16 --identify m4C,m6A
  
 **Note:** You will need to have an index file for your `reference.fasta` and for your `aligned.subreads.bam`. 
 
