@@ -166,6 +166,27 @@ The auxiliary data column of the GFF file contains other statistics which may be
 
 ### MotifMaker Files
 
+__Motifs GFF File (motifs.gff)__
+
+This is a reprocessed version of modifications.gff with the following changes. If a detected modification occurs on a motif detected by the motif finder, the modification is annotated with motif data. An attribute ‘motif’ is added containing the motif string, and an attribute ‘id’ is added containing the motif id, which is the motif string for unpaired motifs or ‘motifString1/motifString2’ for paired motifs. If a motif instance exists in the genome, but was not detected in modifications.gff, an entry is added to motifs.gff, indicating the presence of that motif and the kinetics that were observed at that site.
+
+__Motifs CSV File (motifs.csv)__
+
+This file summarizes the modified motifs discovered by the tool. The CSV contains one row per detected motif, with the following columns.
+
+|Column	| Description |
+| ----- | ----------- |
+|motifString	| Detected motif sequence| 
+|centerPos	| Position in motif of modification (0-based)| 
+|fraction	| Fraction of instances of this motif with modification QV above the QV threshold| 
+|nDetected	| Number of instances of this motif with above threshold| 
+|nGenome	| Number of instances of this motif in reference sequence| 
+|groupTag	| A string idetifying the motif grouping. For paired motifs this is “<motifString1>/<motifString2>”, For unpaired motifs|  this equals motifString| 
+|partnerMotifString	| motifString of paired motif (motif with reverse-complementary motifString)| 
+|meanScore	| Mean Modification Qv of detected instances| 
+|meanIpdRatio	| Mean IPD ratio of detected instances| 
+|meanCoverage	| Mean coverage of detected instances| 
+|objectiveScore	| Objective score of this motif in the motif finder algorithm| 
 
 ## Algorithm Modules
 
