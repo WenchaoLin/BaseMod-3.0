@@ -24,6 +24,15 @@ Table of contents
 
 ## Overview
 
+Analyses are performed in three stages, PBAlign, kineticsTools, and MotifMaker. 
+* __PBAlign__
+  * todo
+* __kineticsTools__
+  * todo 
+* __MotifMaker__
+  * todo
+
+
 ## Manual
 
 ### Running with SMRTLink
