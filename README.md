@@ -101,6 +101,29 @@ Finally, generate a GFF file of all modifications that are part of motifs.
 
 ### kineticsTools Files
 
+__Modifications File (modifications.csv)__
+
+The modifications.csv file contains one row for each (reference position, strand) pair that appeared in the dataset with coverage at least x. x defaults to 3, but is configurable with ‘–minCoverage’ flag to ipdSummary.py. The reference position index is 1-based for compatibility with the gff file the R environment.
+
+The output columns vary depending on whether `--control` was used to run in case-control mode, or whether the program ran in the default in-silico control mode.
+
+**in-silico control mode output columns**
+
+|Column	| Description |
+| ----- | ----------- |
+|refId	| reference sequence ID of this observation |
+tpl		| 1-based template position |
+strand		| native sample strand where kinetics were generated. ‘0’ is the strand of the original FASTA, ‘1’ is opposite strand from FASTA	| 
+base		| the cognate base at this position in the reference	| 
+score		| Phred-transformed pvalue that a kinetic deviation exists at this position	| 
+tMean		| capped mean of normalized IPDs observed at this position	| 
+tErr		| capped standard error of normalized IPDs observed at this position (standard deviation / sqrt(coverage)	| 
+modelPrediction		| normalized mean IPD predicted by the synthetic control model for this sequence context	| 
+ipdRatio		| tMean / modelPrediction	| 
+coverage		| count of valid IPDs at this position (see Filtering section for details)	| 
+frac		| estimate of the fraction of molecules that carry the modification	| 
+fracLow		| 2.5% confidence bound of frac estimate	| 
+fracUpp		| 97.5% confidence bound of frac estimate	| 
 
 
 ### MotifMaker Files
