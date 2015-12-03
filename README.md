@@ -153,7 +153,7 @@ pbsmrtpipe pipeline-id pbsmrtpipe.pipelines.ds_modification_motif_analysis -e ei
 | kineticsTools | Identify basemods (identify) |   | Specific modifications to identify (comma-separated list). Currrent options are m6A and/or m4C. |
 | kineticsTools | Max sequence length (max_length) | 2112827392  | Maximum number of bases to process per contig |
 | kineticsTools | P-value (pvalue) | 0.001  | P-value cutoff |
-| kineticsTools | Minimum methylated fraction (min_fraction) | 30  | Minimum methylated fraction |
+| MotifMaker | Minimum methylated fraction (min_fraction) | 30  | Minimum methylated fraction |
 | MotifMaker | Minimum Qmod score (min_score) | 30  | Minimum Qmod score to use in motif finding |
 | PBAlign | Algorithm options (algorithm_options) | -minMatch 12 -bestn 10 -minPctIdentity 70.0  | List of space-separated arguments passed to BLASR |
 | PBAlign | Concordant alignment (concordant) | TRUE  | Map subreads of a ZMW to the same genomic location |
