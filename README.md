@@ -403,3 +403,6 @@ We test the hypothesis that IPDs observed at a particular locus in the sample ha
 ### MotifMaker
 
 ## Glossary
+
+ * __Inter-Pulse Duration (IPD)__
+ * explanation
