@@ -1,6 +1,6 @@
 # BaseMod: PacBio DNA Modification Sequence Analysis
 
-TODO
+(nat)
 
 Table of contents
 =================
@@ -34,7 +34,7 @@ fasta, pls.h5, bas.h5 or ccs.h5 file or a fofn (file of file names). Output
 can be in CMP.H5, SAM or BAM format. If output is BAM format, aligner can
 only be BLASR and QVs will be loaded automatically.
 * __kineticsTools__
-  * todo 
+  * (nat)
 * __MotifMaker__
   * todo
 
