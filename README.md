@@ -107,7 +107,7 @@ dataset create --type SubreadSet my.subreadset.xml subreads1.bam subreads2.bam .
 This will create a file called `my.subreadset.xml`. 
 
 
-#### Create and edit resequencing options and global options for `pbsmrtpipe`.
+#### Create and edit basemod options and global options for `pbsmrtpipe`.
 Create a global options XML file which contains SGE related, job chunking and
 job distribution options that you may modify by:
 
