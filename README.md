@@ -143,6 +143,32 @@ pbsmrtpipe pipeline-id pbsmrtpipe.pipelines.ds_modification_motif_analysis -e ei
 
 ### SMRTLink/pbsmrtpipe Basemod Options
 
+| Module |    Parameter (pbsmrtpipe name) |     Default      |  Explanation      |
+| ------ | ------------------------------ | ---------------- | ----------------- |
+| PBAlign | Algorithm (algorithm) | quiver  | Algorithm name |
+| PBAlign | Diploid mode (algorithm) | FALSE  | Enable detection of heterozygous variants (experimental) |
+| PBAlign | Minimum confidence (algorithm) | 40  | The minimum confidence for a variant call to be output to variants.gff |
+| PBAlign | Minimum coverage (algorithm) | 5  | The minimum site coverage that must be achieved for variant calls and consensus to be calculated for a site. |
+| PBAlign | Compute methyl fraction (algorithm) | FALSE  | When identifying specific modifications (m4C and/or m6A), enabling this option will estimate the methylated fraction, along with 95% confidence interval bounds. |
+| PBAlign | Identify basemods (algorithm) |   | Specific modifications to identify (comma-separated list). Currrent options are m6A and/or m4C. |
+| PBAlign | Max sequence length (algorithm) | 2112827392  | Maximum number of bases to process per contig |
+| PBAlign | P-value (algorithm) | 0.001  | P-value cutoff |
+| PBAlign | Minimum methylated fraction (algorithm) | 30  | Minimum methylated fraction |
+| PBAlign | Minimum Qmod score (algorithm) | 30  | Minimum Qmod score to use in motif finding |
+| PBAlign | Algorithm options (algorithm) | -minMatch 12 -bestn 10 -minPctIdentity 70.0  | List of space-separated arguments passed to BLASR |
+| PBAlign | Concordant alignment (algorithm) | TRUE  | Map subreads of a ZMW to the same genomic location |
+| PBAlign | Consolidate .bam (algorithm) | FALSE  | Merge chunked/gathered .bam files |
+| PBAlign | Number of .bam files (algorithm) | 1  | Number of .bam files to create in consolidate mode |
+| PBAlign | Hit policy (algorithm) | randomBest  | Specify a policy for how to treat multiple hit random : selects a random hit. all : selects all hits. allbest : selects all the best score hits. randombest: selects a random hit from all best score hits. leftmost : selects a hit which has the best score and the smallest mapping coordinate in any reference. Default value is randombest. |
+| PBAlign | Min. accuracy (algorithm) | 70  | Minimum required alignment accuracy (percent) |
+| PBAlign | Min. length (algorithm) | 50  | Minimum required alignment length |
+| PBAlign | Batch sort size (algorithm) | 10000  | Intermediate sort size parameter (default=10000) |
+| PBAlign | Force the number of regions (algorithm) | FALSE  | If supplied, then try to use this number (max value = 40000) of regions per reference, otherwise the coverage summary report will optimize the number of regions in the case of many references. Not compatible with a fixed region size. |
+| PBAlign | Number of variants (algorithm) | 100  | number of top variants to show (default=100) |
+| PBAlign | Max contigs (algorithm) | 25  | Max number of contigs to plot. Defaults to 25. |
+| PBAlign | Number of regions (algorithm) | 1000  | Desired number of genome regions in the summary statistics (used for guidance, not strict). Defaults to 1000 |
+| PBAlign | Region size (algorithm) | 0  | If supplied, used a fixed genomic region size |
+
 ### PBAlign Options
 
 | Type  |  Parameter          |     Example      |  Explanation      |
