@@ -143,7 +143,7 @@ pbsmrtpipe pipeline-id pbsmrtpipe.pipelines.ds_modification_motif_analysis -e ei
 
 ### SMRTLink/pbsmrtpipe Basemod Options
 
-| Module |    Parameter (pbsmrtpipe name) |     Default      |  Explanation      |
+| Module |    Parameter (pbsmrtpipe_name) |     Default      |  Explanation      |
 | ------ | ------------------------------ | ---------------- | ----------------- |
 | PBAlign | Algorithm (algorithm) | quiver  | Algorithm name |
 | PBAlign | Diploid mode (diploid) | FALSE  | Enable detection of heterozygous variants (experimental) |
