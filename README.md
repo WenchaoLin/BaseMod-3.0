@@ -207,7 +207,7 @@ pbsmrtpipe pipeline-id pbsmrtpipe.pipelines.ds_modification_motif_analysis -e ei
 | Multisite Detection | --ms_csv MS_CSV | Multisite detection CSV file. (default: None) |
 | Case-Control Mode | --control CONTROL  | cmph.h5 file containing a control sample. Tool will perform a case-control analysis (default: None) |
 | LDA | --useLDA | Set this flag to debug LDA for m5C/Ca5C detection (default: False) |
-| Help | --paramsPath PARAMSPATH | Directory containing in-silico trained model for each chemistry (default: /mnt/secondary/builds/full/3.0.0/prod/smrtanalysis_3.0.0.167527/private/pacbio/pythonpkgs/kineticsTools/lib/python2.7/site-packages/kineticsTools/resources) (nat) |
+| Help | --paramsPath PARAMSPATH | Directory containing in-silico trained model for each chemistry (default: ) (nat) |
 | Minimum Call Coverage | --minCoverage MINCOVERAGE | Minimum coverage required to call a modified base (default: 3) |
 | Maxmimum Queue Size | --maxQueueSize MAXQUEUESIZE | Max Queue Size (default: 20) |
 | Maximum Coverage | --maxCoverage MAXCOVERAGE | Maximum coverage to use at each site (default: -1) |
