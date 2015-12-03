@@ -28,7 +28,11 @@ Table of contents
 
 Analyses are performed in four stages, PBAlign, kineticsTools, MotifMaker Find, and MotifMaker Reprocess. 
 * __PBAlign__
-  * todo
+  * PBAlign maps PacBio sequences to references using an algorithm selected from a
+selection of supported command-line alignment algorithms. Input can be a
+fasta, pls.h5, bas.h5 or ccs.h5 file or a fofn (file of file names). Output
+can be in CMP.H5, SAM or BAM format. If output is BAM format, aligner can
+only be BLASR and QVs will be loaded automatically.
 * __kineticsTools__
   * todo 
 * __MotifMaker__
