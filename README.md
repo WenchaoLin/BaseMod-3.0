@@ -31,7 +31,7 @@ Table of contents
 
 ![base modification and motif analysis](https://cloud.githubusercontent.com/assets/12494820/11598528/52b10972-9a77-11e5-9131-b1860bf3de34.png)
 
-Analyses are performed in four stages, PBAlign, kineticsTools, MotifMaker Find, and MotifMaker Reprocess. 
+Analyses are performed in four stages: PBAlign, kineticsTools, MotifMaker Find, and MotifMaker Reprocess. 
 * __PBAlign__
   * PBAlign maps PacBio sequences to references using an algorithm selected from a
 selection of supported command-line alignment algorithms. Input can be a
