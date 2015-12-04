@@ -149,7 +149,7 @@ And you can modify options using your favorite text editor, such as vim.
 Once you have set your options, you are ready to run basemod via pbsmrtpipe:
 
 ```
-pbsmrtpipe pipeline-id pbsmrtpipe.pipelines.ds_modification_motif_analysis -e eid_ref_dataset:reference.fasta -e eid_subread:my.subreadset.xml --preset-xml=isoseq_options.xml --preset-xml=global_options.xml
+pbsmrtpipe pipeline-id pbsmrtpipe.pipelines.ds_modification_motif_analysis -e eid_ref_dataset:reference.fasta -e eid_subread:my.subreadset.xml --preset-xml=basemod_options.xml --preset-xml=global_options.xml
 ```
 
 
