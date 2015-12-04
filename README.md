@@ -276,18 +276,18 @@ MotifMaker options, except for `--help`, require the specification of a command 
 | Command  |  Parameter          |     Example      |  Explanation      |
 | ----- | ------------------ | ---------------- | ----------------- |
 | | Help | -h, --help | show this help message and exit |
-| find | Reference FASTA |  -f, --fasta | Reference fasta file |
-| find | Modifications GFF | -g, --gff | modifications.gff or .gff.gz file |
-| find | Minimum Qmod Score |  -m, --minScore | Minimum Qmod score to use in motif finding (default: 30.0) |
-| find | Motif CSV | -o, --output | Output motifs csv file |
+| find | Reference FASTA |  -f reference.fasta, --fasta reference.fasta | Reference fasta file |
+| find | Modifications GFF | -g basemod.gff, --gff basemod.gff | basemod.gff or .gff.gz file |
+| find | Minimum Qmod Score |  -m SCORE, --minScore SCORE | Minimum Qmod score to use in motif finding (default: 30.0) |
+| find | Motif CSV | -o motifs.csv, --output motifs.csv | Output motifs csv file |
 | find | Parallelize | -p, --parallelize | Parallelize motif finder (default: true) |
-| find | Motif XML | -x, --xml | Output motifs xml file |
-| reprocess | Modifications CSV | -c, --csv |  Raw modifications.csv file |
-| reprocess | Reference FASTA | -f, --fasta |  Reference fasta file |
-| reprocess | Modifications GFF | -g, --gff |  original modifications.gff or .gff.gz file |
-| reprocess | Minimum MethylFraction | --minFraction |  Only use motifs above this methylated fraction (default: 0.0) |
-| reprocess | Motifs CSV | -m, --motifs |  motifs csv |
-| reprocess | Reprocessed Modifications GFF | -o, --output |  Reprocessed modifications.gff file |
+| find | Motif XML | -x motifs.xml, --xml motifs.xml | Output motifs xml file |
+| reprocess | Modifications CSV | -c basemod.csv, --csv basemod.csv |  Raw basemod.csv file |
+| reprocess | Reference FASTA | -f reference.fasta, --fasta reference.fasta |  Reference fasta file |
+| reprocess | Modifications GFF | -g basemod.gff, --gff basemod.gff|  original basemod.gff or .gff.gz file |
+| reprocess | Minimum MethylFraction | --minFraction FRACTION |  Only use motifs above this methylated fraction (default: 0.0) |
+| reprocess | Motifs CSV | -m motifs.csv, --motifs motifs.csv|  motifs csv |
+| reprocess | Motifs GFF | -o motifs.gff, --output motifs.gff|  Reprocessed basemod.gff with motif information added |
 
 ## Files
 
