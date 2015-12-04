@@ -224,9 +224,9 @@ pbsmrtpipe pipeline-id pbsmrtpipe.pipelines.ds_modification_motif_analysis -e ei
 |  Parameter          |     Example      |  Explanation      |
 | ------------------ | ---------------- | ----------------- |
 | Input Reads | aligned_subreads.bam | This is a positional argument and the first argument to be specified. Can be a BAM or Alignment DataSet. |
-| Reference File | --reference REFERENCE | Fasta or Reference DataSet (default: None) |
-| Modifications GFF | --gff GFF | Output GFF file of modified bases (default: None) |
-| Modifications CSV | --csv CSV | Output CSV file out per-nucleotide information (default: None) |
+| Reference File | --reference reference.fasta | Fasta or Reference DataSet (default: None) |
+| Modifications GFF | --gff basemod.gff | Output GFF file of modified bases (default: None) |
+| Modifications CSV | --csv basemod.csv | Output CSV file out per-nucleotide information (default: None) |
 | Help |  -h, --help | show this help message and exit |
 | Version | -v, --version | show program's version number and exit |
 | Log Level | --log-level {DEBUG, INFO, WARNING, ERROR, CRITICAL} | Set log level (default: INFO) |
