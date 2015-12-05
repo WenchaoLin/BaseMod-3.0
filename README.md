@@ -53,7 +53,6 @@ specific base in a specific sequence motif.  The canonical example the
 m6A methylation of adenine in GATC contexts in E.coli. Prokaryotes may
 have a very large number of active restriction-modification systems
 present, leading to a complicated mixture of sequence motifs.
- 
 PacBio SMRT sequencing is sensitive to the presence of methylated DNA
 at single base resolution, via shifts in the polymerase kinetics
 observed in the real-time sequencing traces.  See our [publication](http://nar.oxfordjournals.org/content/40/4/e29) for
