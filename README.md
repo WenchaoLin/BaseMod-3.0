@@ -440,8 +440,11 @@ are implicitly degenerate.  Given a list of modification detections
 and a genome sequence, we define the following objective function on
 motifs:
  
-Motif score(motif) = (# of detections matching motif) / (# of genome sites matching motif)  *  (Sum of log-pvalue of detections matching motif)
-                   = (fraction methylated) * (sum of log-pvalues of matches)
+```
+Motif score(motif) = 
+(# of detections matching motif) / (# of genome sites matching motif)  *  (Sum of log-pvalue of detections matching motif) = 
+(fraction methylated) * (sum of log-pvalues of matches)
+ ```
  
 We search (close to exhaustively) through the space of all possible
 motifs, progressively testing longer motifs using a branch-and-bound
