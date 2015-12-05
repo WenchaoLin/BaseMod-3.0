@@ -432,7 +432,9 @@ sub-optimal for this case for the following reasons:
  
  
 Here we give a rough overview of the algorthim used by
-MotifMaker. Define a motif as a set of (position relative to
+MotifMaker.
+
+Define a motif as a set of (position relative to
 methylation, required base) tuples. Positions not listed in the motif
 are implicitly degenerate.  Given a list of modification detections
 and a genome sequence, we define the following objective function on
