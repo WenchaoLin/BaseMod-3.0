@@ -56,9 +56,8 @@ present, leading to a complicated mixture of sequence motifs.
  
 PacBio SMRT sequencing is sensitive to the presence of methylated DNA
 at single base resolution, via shifts in the polymerase kinetics
-observed in the real-time sequencing traces.  See our publication for
-more background on modification detection:
-http://nar.oxfordjournals.org/content/early/2011/12/07/nar.gkr1146.full
+observed in the real-time sequencing traces.  See our [publication](http://nar.oxfordjournals.org/content/40/4/e29) for
+more background on modification detection.
 
 
 ## Manual
