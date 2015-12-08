@@ -460,7 +460,13 @@ score discovered so far.
 ## Glossary
 
  * __Inter-Pulse Duration (IPD)__
- * explanation
+ * In the terminology of SMRT sequencing, pulses are single-molecule
+   fluorescence signals interpreted as basecalls.  The IPD for a basecall is
+   the time between the current pulse and the next one.  Many covalent base
+   modifications cause a temporary pause in the sequencing reaction, which
+   varies depending on the type of modification.  For detecting basemods,
+   kineticsTools uses the IPD averaged over many subreads aligned at the same
+   position.
 
 <sup>For Research Use Only. Not for use in diagnostic procedures. © Copyright 2015, Pacific Biosciences of California, Inc. All rights reserved. Information in this document is subject to change without notice. Pacific Biosciences assumes no responsibility for any errors or omissions in this document. Certain notices, terms, conditions and/or use restrictions may pertain to your use of Pacific Biosciences products and/or third party products. Please refer to the applicable Pacific Biosciences Terms and Conditions of Sale and the applicable license terms at http://www.pacificbiosciences.com/licenses.html.</sup>
 
