@@ -303,6 +303,68 @@ MotifMaker options, except for `--help`, require the specification of a command 
 
 ### PBAlign Files
 
+#### Inputs
+
+__Unaligned Reads File (subreads.\*)__
+
+(Required) This file contains your input reads. It can be a BAM, FASTA, XML, CCS.H5 or BAS.H5 file.
+
+__Reference File(reference.fasta)__
+
+(Required) This file contains the reference sequences that your input reads will be aligned against.
+
+__Configuration File__
+
+(Optional) If you prefer to specify all arguments in a config file rather than on the command line, use the `--configFile` argument.
+
+Example config text file:
+```
+# This is a config file for pbalign where users can specify
+# values for an arbitary subset of optional arguments for pbalign.
+# Lines which start with '#' are comments. Otherwise each line
+# should specify the value for exactly one optinal argument.
+# Note that:
+#   [1] Positional arguments, including inputFileName, outputFileName,
+#       and referencePath, can not be specified in a config file.
+#   [2] Sepcial arguments, including --verbose, --version (-v..),
+#       --debug and --profile, in a config file will be ignored.
+#   [3] Arguments specified in a config file will be overwritten
+#       by arguments on command-line.
+
+# Aligner's options.
+--maxHits       = 20
+--minAnchorSize = 1
+--minLength     = 100
+--algorithmOptions = "-noSplitSubreads -maxMatch 30 -nCandidates 30"
+
+# SamFilter's filtering criteria and hit policy.
+--hitPolicy     = randombest
+--maxDivergence = 40
+
+# Miscellaneous
+--seed = 10
+```
+
+__Pulse File__
+
+(Optional) Path to \*.bas.h5 or \*.pls.h5 when input type is \*.fasta, and output type is \*.cmp.h5. This is necessary to load pulse metrics into the alignment file (\*.cmp.h5) for subsequent consumption by `variantCaller`.
+
+__AlignmentSeq File__
+
+I don't know what this is Ben, Where did you see this? (greg)
+
+__Region Table?__
+
+(Optional) path to \*.rgn.h5. When input file is of type \*.bas.h5, you may supply an optional Region table (\*.rgn.h5) to filter the reads prior to alignment
+
+####Outputs
+
+__Aligned Reads File (aligned_subreads.\*)__
+
+This file contains your aligned output reads. You can specify \*.cmp.h5, \*.sam or \*.bam
+Note: \*.bam output format only works if `--algorthim blasr`
+
+
 ### kineticsTools Files
 
 __Modifications CSV File (basemods.csv)__
