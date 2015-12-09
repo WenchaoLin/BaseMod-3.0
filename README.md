@@ -349,11 +349,7 @@ __Pulse File__
 
 (Optional) Path to \*.bas.h5 or \*.pls.h5 when input type is \*.fasta, and output type is \*.cmp.h5. This is necessary to load pulse metrics into the alignment file (\*.cmp.h5) for subsequent consumption by `variantCaller`.
 
-__AlignmentSeq File__
-
-I don't know what this is Ben, Where did you see this? (greg)
-
-__Region Table?__
+__Region Table__
 
 (Optional) path to \*.rgn.h5. When input file is of type \*.bas.h5, you may supply an optional Region table (\*.rgn.h5) to filter the reads prior to alignment
 
