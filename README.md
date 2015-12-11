@@ -243,7 +243,7 @@ pbsmrtpipe pipeline-id pbsmrtpipe.pipelines.ds_modification_motif_analysis -e ei
 | Verbose | --verbose | Print verbose job information to stdout | 
 | Debug Mode | --debug | Debug to stdout (default: False) |
 | Number of Jobs | --numWorkers NUMWORKERS, -j NUMWORKERS | Number of thread to use (-1 uses all logical cpus) (default: 1) |
-| P-Value | --pvalue PVALUE | P-value cutoff (default: 0.01) |
+| P-Value | --pvalue PVALUE | Kinetic Deviation P-value cutoff (default: 0.01) (nat) |
 | Maximum Length | --maxLength MAXLENGTH | Maximum number of bases to process per contig (default: 3000000000000) |
 | Identify |  --identify IDENTIFY | Specific modifications to identify (comma-separated list). Currrent options are m6A, m4C, m5C_TET. Cannot be used with --control. (default: ) |
 | Compute Methyl Fraction | --methylFraction | In the --identify mode, add --methylFraction to command line to estimate the methylated fraction, along with 95% confidence interval bounds. (default: False) |
