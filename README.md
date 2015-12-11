@@ -186,7 +186,7 @@ pbsmrtpipe pipeline-id pbsmrtpipe.pipelines.ds_modification_motif_analysis -e ei
 | PBAlign | Hit policy (hit_policy) | randomBest  | Specify a policy for how to treat multiple hit random : selects a random hit. all : selects all hits. allbest : selects all the best score hits. randombest: selects a random hit from all best score hits. leftmost : selects a hit which has the best score and the smallest mapping coordinate in any reference. Default value is randombest. |
 | PBAlign | Min. accuracy (min_accuracy) | 70  | Minimum required alignment accuracy (percent) |
 | PBAlign | Min. length (min_length) | 50  | Minimum required alignment length |
-| pbsmrtpipe | Batch sort size (batch_sort_size) | 10000  | Intermediate sort size parameter (default=10000) |
+| pbsmrtpipe | Batch sort size (batch_sort_size) | 10000  | Intermediate sort size parameter (default=10000) (nat) what are the units?|
 | pbsmrtpipe | Force the number of regions (force_num_regions) | FALSE  | If supplied, then try to use this number (max value = 40000) of regions per reference, otherwise the coverage summary report will optimize the number of regions in the case of many references. Not compatible with a fixed region size. |
 | pbsmrtpipe | Number of variants (how_many) | 100  | number of top variants to show (default=100) |
 | pbsmrtpipe | Max contigs (max_contigs) | 25  | Max number of contigs to plot. Defaults to 25. |
